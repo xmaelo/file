@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="40"
+   height="40"
+   fill="none"
+   version="1.1"
+   id="svg4079"
+   sodipodi:docname="car-icon.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4081"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="17.05"
+     inkscape:cx="20.058651"
+     inkscape:cy="19.970674"
+     inkscape:window-width="1900"
+     inkscape:window-height="1035"
+     inkscape:window-x="10"
+     inkscape:window-y="35"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4079" />
+  <g
+     id="g4141"
+     style="fill:url(#linearGradient4167);fill-opacity:1.0">
+    <path
+       fill-rule="evenodd"
+       d="M5.482 7.734c.248-.643.866-1.068 1.555-1.068h16.667c.517 0 1.005.24 1.32.65l6.907 8.966h1.032c1.445 0 2.818.597 3.819 1.637a5.59 5.59 0 0 1 1.551 3.876v7.692c0 .442-.176.866-.488 1.179s-.736.488-1.178.488h-2.288C33.696 33.356 31.698 35 29.259 35s-4.437-1.644-5.119-3.846h-8.281C15.178 33.356 13.18 35 10.741 35s-4.437-1.644-5.119-3.846H3.333c-.442 0-.866-.176-1.179-.488s-.488-.736-.488-1.179V17.949c0-.205.038-.408.111-.599l3.704-9.615zm.14 20.086c.682-2.202 2.68-3.846 5.119-3.846s4.437 1.644 5.119 3.846h8.281c.682-2.202 2.68-3.846 5.119-3.846s4.437 1.644 5.119 3.846H35v-6.026c0-.598-.229-1.159-.619-1.563a1.97 1.97 0 0 0-1.418-.616H5v8.205h.622zm.139-11.538h12.572V10H8.181l-2.42 6.282zM21.667 10v6.282h6.057L22.884 10h-1.217zM10.741 27.308c-1.066 0-2.037.916-2.037 2.179s.971 2.179 2.037 2.179 2.037-.916 2.037-2.179-.971-2.179-2.037-2.179zm18.519 0c-1.066 0-2.037.916-2.037 2.179s.971 2.179 2.037 2.179 2.037-.916 2.037-2.179-.971-2.179-2.037-2.179z"
+       fill="url(#A)"
+       id="path4070"
+       style="fill:url(#linearGradient4167);fill-opacity:1.0" />
+  </g>
+  <defs
+     id="defs4077">
+    <linearGradient
+       id="A"
+       x1="1.667"
+       y1="35"
+       x2="16.965"
+       y2="-5.216"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#5d3cf2"
+         id="stop4072"
+         style="stop-color:#000000;stop-opacity:1" />
+      <stop
+         offset="1"
+         stop-color="#fd5631"
+         id="stop4074"
+         style="stop-color:#0be47b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#A"
+       id="linearGradient4167"
+       x1="1.666"
+       y1="20.833"
+       x2="38.333012"
+       y2="20.833"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+</svg>
