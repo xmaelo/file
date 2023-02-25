@@ -90,12 +90,12 @@ Route::controller(CarController::class)->group(function () {
 });
 
 Route::controller(AccountsController::class)->group(function () {
-    Route::get('/reset-password/{token}', 'reset_password')->name('password.reset1');
+    Route::get('/reset-password/{token}', 'reset_password')->name('password.reset');
     Route::get('/admin/accounts/login', 'login');
     Route::get('/admin/accounts/logout', 'logout');
     Route::get('/admin/logout', 'logout_function');
-    Route::post('/forgot-password', 'forgot_password')->name('password.email1');
-    Route::post('/reset-password', 'reset_password_update')->name('password.update1');
+    Route::post('/forgot-password', 'forgot_password')->name('password.email');
+    Route::post('/reset-password', 'reset_password_update')->name('password.update');
 });
 
 Route::controller(PriceController::class)->group(function () {
