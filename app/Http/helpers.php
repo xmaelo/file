@@ -275,7 +275,7 @@ function buyerInvoice($car, $user_id)
   $address = buyerInfo($car->bidder_id)->street . ',' . buyerInfo($car->bidder_id)->post_box . ',' . buyerInfo($car->bidder_id)->town . ',' . buyerInfo($car->bidder_id)->postcode . ',' . buyerInfo($car->bidder_id)->country;
   $ref_number = uniqueBuyerInvoiceCode();
   $today = Carbon::now()->toDateString();
-  $deadline =  Carbon::now()->addDays(7)->toDateTimeString();
+  $deadline =  Carbon::now()->addDays(30)->toDateTimeString();
 
 
   $img->text($user->company, 430, 360, function ($font) {
@@ -527,9 +527,9 @@ function userInvoiceCount($user_id)
   return ($buyer_invoice_count + $seller_invoice_count);
 }
 
-function sellerInvoice($cars, $user_id)
-{
+function createInvoceSeller($cars, $user_id){
   $user = User::find($user_id);
+
   $seller_not_sold_cars = Car::where('u_id', $user_id)->where('charged_publishing_price', false)->where('status', 'Not sold')->whereNull('bidder_id')->get();
 
   $img = ImageManagerStatic::make('assets/images/invoices/seller1.jpg');
@@ -537,7 +537,7 @@ function sellerInvoice($cars, $user_id)
   $address = $user->street . ',' . $user->post_box . ',' . $user->town . ',' . $user->postcode . ',' . $user->country;
   $ref = uniqueSellerInvoiceCode();
   $today = Carbon::now()->toDateString();
-  $deadline =  Carbon::now()->addDays(7)->toDateTimeString();
+  $deadline =  Carbon::now()->addDays(30)->toDateTimeString();
 
   $img->text($user->company, 310, 410, function ($font) {
     $font->file('assets/fonts/Raleway-Bold.ttf');
@@ -646,6 +646,7 @@ function sellerInvoice($cars, $user_id)
     $font->size(16);
   });
 
+
   //part 2
   $horizontal_value = 210;
   $charges_total = 0;
@@ -682,8 +683,8 @@ function sellerInvoice($cars, $user_id)
     $charges_total += publicationCharge();
   }
 
-  foreach ($cars as $car) {
-
+  //foreach ($cars as $car) {
+    $car = $cars;
     $price = soldVehicleCharge();
     $seller2->text($car->created_at, 100,  $horizontal_value, function ($font) {
       $font->file('assets/fonts/Raleway-Bold.ttf');
@@ -722,8 +723,7 @@ function sellerInvoice($cars, $user_id)
       ]);
     }
     $horizontal_value += 30;
-  }
-
+  //}
   $vat_total = $charges_total * (7.7 / 100);
   $vat_total = number_format((float)$vat_total, 2, '.', '');
 
@@ -805,13 +805,13 @@ function sellerInvoice($cars, $user_id)
 
   $seller_invoice = SellerInvoice::create([
     'user_id' => $user->id,
-    'car_id' => 2,
+    'car_id' => $cars->id,
     'type' => 'seller invoice',
     'deadline' => $deadline,
     'total' => ($charges_total + $vat_total),
     'invoice' => $pdf_name,
     'ref_number' => $ref,
-  ]);
+  ]); 
 
   $invoice_data = [
     'message' => 'Congratulations, your car has been sold.',
@@ -821,10 +821,17 @@ function sellerInvoice($cars, $user_id)
     'brand' => $car->brand,
     'model' => $car->model,   
     'invoice' => $pdf_name,   
-];
+  ];
+  return $invoice_data;
 
-$email = sellerInfo($car->u_id)->email;
-Mail::to($email)->send(new SellerInvoiceMail($invoice_data));
+
+}
+function sellerInvoice($car, $user_id) 
+{
+  $invoice_data = createInvoceSeller($car, $user_id);
+  
+  $email = sellerInfo($car->u_id)->email;
+  Mail::to($email)->send(new SellerInvoiceMail($invoice_data));
 
 }
 
@@ -1099,7 +1106,7 @@ function sendSellerInvoice()
   $onGoing = Auction::where('isFinished', false)->where('start_date', '<=', $today)
     ->where('end_date', '>', $today)->first();
 
-  if ($onGoing) {
+  if ($onGoing) { 
     Log::info('if');
     $unique_auctions = Car::where('status', 'Not sold')->whereNotNull('bidder_id')
       ->where('auction', '!=', $onGoing->id)->get()->unique('auction');

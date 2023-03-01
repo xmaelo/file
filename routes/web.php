@@ -8,6 +8,7 @@ use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ClientLoginController;
 use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CarController;
 use App\Http\Controllers\PriceController;
@@ -53,6 +54,29 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/gdrp', 'gdrp');
     Route::get('/car/{slug}', 'single_car');
 });
+
+Route::controller(InvoiceController::class)->group(function () {
+    Route::get('/admin/invoices','index');
+    Route::post('/adminmark-as-paid','update'); 
+});
+ 
+Route::get('storage/{filename}', function ($filename)
+{
+    $path = storage_path('app/public/pdf/'. $filename);
+ 
+    if (!File::exists($path)) {
+        abort(404);
+    }
+ 
+    $file = File::get($path);
+    $type = File::mimeType($path);
+ 
+    $response = Response::make($file, 200);
+    $response->header("Content-Type", $type);
+ 
+    return $response;
+});
+
 
 Route::controller(ClientController::class)->group(function () {
     Route::get('/admin/users', 'index');

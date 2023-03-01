@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Models\Auction;
 use App\Models\Car;
+use App\Models\SellerInvoice;
 use App\Models\User;
 use Illuminate\Support\ServiceProvider;
 
@@ -31,8 +32,10 @@ class AdminServiceProvider extends ServiceProvider
         $auctions = Auction::where('isFinished', false)->count();
         $sold_cars = Car::where('status', 'sold')->count();
         $all_cars = Car::all()->count();
+        $all_cars = Car::all()->count();
+        $all_invoices = SellerInvoice::all()->count();
 
-        $this->ItemsCounts = [$users, $cars, $auctions, $sold_cars, $all_cars];
+        $this->ItemsCounts = [$users, $cars, $auctions, $sold_cars, $all_cars, $all_invoices];
 
         view()->composer('layouts.admin', function ($view) {
             $view->with(['contents' => $this->ItemsCounts]);

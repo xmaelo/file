@@ -28,9 +28,10 @@ class SellerInvoiceMail extends Mailable
      */
     public function build()
     {
+        //$path = storage_path();
         return $this->markdown('emails.seller-invoice-mail')->with([
             'data' => $this->invoice_data
-        ])->attach('storage/pdf/' . $this->invoice_data['invoice'], [
+        ])->attach(storage_path('app/public/pdf/' . $this->invoice_data['invoice']), [
             'as' => 'invoice.pdf',
             'mime' => 'application/pdf',
         ]);

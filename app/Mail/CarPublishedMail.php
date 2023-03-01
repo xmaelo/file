@@ -10,16 +10,18 @@ use Illuminate\Queue\SerializesModels;
 class CarPublishedMail extends Mailable
 {
     use Queueable, SerializesModels;
-    public $car;
+    public $car; 
+    public $invoice_data; 
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($car)
+    public function __construct($car, $invoice_data)
     {
        $this->car = $car;
+       $this->invoice_data = $invoice_data;
     }
 
     /**
@@ -31,6 +33,10 @@ class CarPublishedMail extends Mailable
     {
         return $this->markdown('emails.auth.car_published_mail')->with([
             'car' => $this->car
+        ])->attach(storage_path('app/public/pdf/' . $this->invoice_data['invoice']), [
+            'as' => 'invoice.pdf',
+            'mime' => 'application/pdf',
         ]);
     }
+    
 }

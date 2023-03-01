@@ -10,6 +10,7 @@ Invoices | Accounts
 @endsection
 
 @section('content')
+
 <div class="container mt-5 pt-5">
     <nav class="pt-md-3 mb-3" aria-label="Breadcrumb">
         <ol class="breadcrumb">
@@ -35,47 +36,44 @@ Invoices | Accounts
                         <th>Total</th>
                     </thead>
                     <tbody>
-                        @forelse($seller_invoices as $seller_invoice)
-                        <tr>
-                            <td>{{ $seller_invoice->id }}</td>
-                            <td>
-                                <a href="{{asset('storage/pdf/'.$seller_invoice->invoice)}}" target="_blank">
-                                    <i class="fi-file me-2"></i>
-                                </a>
-                            </td>
-                            <td>Test type</td>
-                            <td>{{ $seller_invoice->created_at }}</td>
-                            <td>{{ $seller_invoice->created_at }}</td>
-                            <td>CHF {{ number_format($seller_invoice->total, 0, ",", "'") }}.00</td>
-                        </tr>
-                        @empty
-                        <tr>
-                            <td class="text-center" colspan="6">
-                                <i class="fa fa-frown mr-5"></i> No items found!
-                            </td>
-                        </tr>
-                        @endforelse
-                        @forelse($buyer_invoices as $buyer_invoice)
-                        <tr>
-                            <td>{{ $buyer_invoice->id }}</td>
-                            <td>
-                                <a href="{{asset('storage/pdf/'.$buyer_invoice->invoice)}}" target="_blank">
-                                    <i class="fi-file me-2"></i>
-                                </a>
-                            </td>
-                            <td>Test type</td>
-                            <td>{{ $buyer_invoice->created_at }}</td>
-                            <td>{{ $buyer_invoice->created_at }}</td>
-                            <td>CHF {{ number_format($buyer_invoice->total, 0, ",", "'") }}</td>
+                        @if (count($seller_invoices) > 0 or count($buyer_invoices) > 0)
+                            @foreach($seller_invoices as $seller_invoice)
+                            <tr>
+                                <td>{{ $loop->index+1  }}</td>
+                                <td>
+                                    <a href="{{'/storage/'.$seller_invoice->invoice}}" target="_blank">
+                                        <i class="fi-file me-2"></i>
+                                    </a>
+                                </td>
+                                <td>{{ $seller_invoice->type }}</td>
+                                <td>{{ $seller_invoice->created_at }}</td>
+                                <td>{{ $seller_invoice->deadline }}</td>
+                                <td>CHF {{ number_format($seller_invoice->total, 0, ",", "'") }}.00</td>
+                            </tr>
+                            @endforeach
+                            @foreach($buyer_invoices as $buyer_invoice)
+                            <tr>
+                                <td>{{ $loop->index + 1 + count($seller_invoices) }}</td>
+                                <td>
 
-                        </tr>
-                        @empty
+                                    <a href="{{'/storage/'.$buyer_invoice->invoice}}" target="_blank">
+                                        <i class="fi-file me-2"></i>
+                                    </a>
+                                </td>
+                                <td>{{ $buyer_invoice->type }}</td>
+                                <td>{{ $buyer_invoice->created_at }}</td>
+                                <td>{{ $buyer_invoice->deadline }}</td>
+                                <td>CHF {{ number_format($buyer_invoice->total, 0, ",", "'") }}</td>
+
+                            </tr>
+                            @endforeach
+                        @else
                         <tr>
                             <td class="text-center" colspan="6">
                                 <i class="fa fa-frown mr-5"></i> No items found!
                             </td>
                         </tr>
-                        @endforelse
+                        @endif
                     </tbody>
                 </table>
             </div>
@@ -87,19 +85,40 @@ Invoices | Accounts
                         <th>Invoice</th>
                         <th>Invoice type</th>
                         <th>Invoice date</th>
-                        <th>Invoice deadline</th>
+                        <th>Paid date</th>
                         <th>Total</th>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td class="text-center" colspan="6">
-                                <i class="fa fa-frown mr-5"></i> No items found!
-                            </td>
-                        </tr>
+                        @if (count($paid_invoices) > 0)
+                            @foreach($paid_invoices as $paid_invoice)
+                                <tr>
+                                    <td>{{ $loop->index+1}}</td>
+                                    <td>
+                                        <a href="{{'/storage/'.$paid_invoice->invoice}}" target="_blank">
+                                            <i class="fi-file me-2"></i>
+                                        </a>
+                                    </td>
+                                    <td>{{ $paid_invoice->type }}</td>
+                                    <td>{{ $paid_invoice->created_at }}</td>
+                                    <td>{{ $paid_invoice->paid_date }}</td>
+                                    <td>CHF {{ number_format($paid_invoice->total, 0, ",", "'") }}.00</td>
+                                </tr>
+                            @endforeach
+                        @else
+                            <tr>
+                                <td class="text-center" colspan="6">
+                                    <i class="fa fa-frown mr-5"></i> No items found!
+                                </td>
+                            </tr>
+                        @endif
+
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
 </section>
+@endsection
+@section('scripts')
+    
 @endsection

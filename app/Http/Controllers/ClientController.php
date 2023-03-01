@@ -136,7 +136,7 @@ class ClientController extends Controller
         return redirect()->back()->with('reg_success', 'Registration successful!');
     }
 
-    public function sell_car()
+    public function sell_car() 
     {
         return view('sell-your-car');
     }
@@ -267,7 +267,7 @@ class ClientController extends Controller
             'mechanics' => request('mechanics'),
             'body' => request('body'),
             'car_finish' => request('car_finish'),
-            'others' => request('others'),
+            'others' => request('others'),  
             'documents' => null,
             'images' =>  null,
             'min_price' => request('min_price'),
@@ -316,8 +316,9 @@ class ClientController extends Controller
                 "documents"  =>  $documents
             ]);
         }
+        $invoice_data =  createInvoceSeller($car, session()->get('client_id'));
 
-        Mail::to(userDetails($slug)->email)->send(new CarPublishedMail($car));
+        Mail::to(userDetails($slug)->email)->send(new CarPublishedMail($car, $invoice_data));
         return redirect('/accounts/current-vehicles')->with('success', 'Car details added successfully.');
     }
 
@@ -378,9 +379,10 @@ class ClientController extends Controller
 
         $outstanding = Car::where('p_id', session()->get('client_id'))
             ->where('is_paid', false);
-        $paid = Car::where('p_id', session()->get('client_id'))
-            ->where('is_paid', true);
-        $seller_invoices = SellerInvoice::where('user_id',auth()->user()->id)->get();
+        // $paid = Car::where('p_id', session()->get('client_id'))
+        //     ->where('is_paid', true);
+        $seller_invoices = SellerInvoice::where('user_id',auth()->user()->id)->where('paid', false)->get();
+        $paid = SellerInvoice::where('user_id',auth()->user()->id)->where('paid', true)->get();
         $buyer_invoices = BuyerInvoice::where('user_id',auth()->user()->id)->get();
 
         return view('invoices', [

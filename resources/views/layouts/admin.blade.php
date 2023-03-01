@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/admin-assets/tpicker/lib/tpicker.css">
     <link rel="stylesheet" href="/admin-assets/flatpickr/dist/themes/dark.css">
     <link rel="stylesheet" href="/admin-assets/css/style.css">
-    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
     <script src="/assets/dist/js/select2.min.js"></script>
     <script src="/admin-assets/tpicker/lib/tpicker.js"></script>
     <script src="/admin-assets/flatpickr/dist/flatpickr.js"></script>
@@ -69,13 +69,20 @@
                         <i class="fa fa-star"></i>
                     </span>
                     Memberships
-                </a>
+                </a> 
                 <a href="/admin/users" class="sidebar-link sidebar-link-with-icon {{ 'admin/users' == request()->path() ? 'active' : '' }}">
                     <span class="sidebar-icon {{ 'admin/users' == request()->path() ? 'text-white bg-primary' : '' }}">
                         <i class="fa fa-users"></i>
                     </span>
                     Users <span class="badge badge-primary ml-5">{{$contents[0]}}</span>
                 </a>
+                 <a href="/admin/invoices" class="sidebar-link sidebar-link-with-icon {{ 'admin/cars' == request()->path() ? 'active' : '' }}">
+                    <span class="sidebar-icon {{ 'admin/invoices' == request()->path() ? 'text-white bg-primary' : '' }}">
+                       <i class="fa fa-file-invoice"></i>
+                    </span>
+                    invoices  <span class="badge badge-primary ml-5">{{$contents[5]}}</span> 
+                </a>
+
                 <a href="/admin/cars" class="sidebar-link sidebar-link-with-icon {{ 'admin/cars' == request()->path() ? 'active' : '' }}">
                     <span class="sidebar-icon {{ 'admin/cars' == request()->path() ? 'text-white bg-primary' : '' }}">
                         <i class="fa fa-car"></i>
