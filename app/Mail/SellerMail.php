@@ -26,11 +26,11 @@ class SellerMail extends Mailable
      * Build the message.
      *
      * @return $this
-     */
+     */ 
     public function build()
     {
         return $this->markdown('emails.seller')->with([
             'data' => $this->seller
-        ]);
+        ])
     }
 }

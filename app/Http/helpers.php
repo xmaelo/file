@@ -537,7 +537,7 @@ function createInvoceSeller($cars, $user_id){
   $address = $user->street . ',' . $user->post_box . ',' . $user->town . ',' . $user->postcode . ',' . $user->country;
   $ref = uniqueSellerInvoiceCode();
   $today = Carbon::now()->toDateString();
-  $deadline =  Carbon::now()->addDays(30)->toDateTimeString();
+  $deadline =  Carbon::now()->addDays(1)->toDateTimeString();
 
   $img->text($user->company, 310, 410, function ($font) {
     $font->file('assets/fonts/Raleway-Bold.ttf');
@@ -828,7 +828,7 @@ function createInvoceSeller($cars, $user_id){
 }
 function sellerInvoice($car, $user_id) 
 {
-  $invoice_data = createInvoceSeller($car, $user_id);
+  $invoice_data = createInvoceSeller($car, $user_id); 
   
   $email = sellerInfo($car->u_id)->email;
   Mail::to($email)->send(new SellerInvoiceMail($invoice_data));

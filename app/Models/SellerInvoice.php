@@ -16,5 +16,8 @@ class SellerInvoice extends Model
         'total',
         'invoice',
         'ref_number',
+        'paid',
+        'paid_date',
+        'email_send_counter'
     ];
 }

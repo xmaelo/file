@@ -57,7 +57,7 @@ Route::controller(PageController::class)->group(function () {
 
 Route::controller(InvoiceController::class)->group(function () {
     Route::get('/admin/invoices','index');
-    Route::post('/adminmark-as-paid','update'); 
+    Route::get('/admin/invoices/{invoice_id}','mark_as_paid'); 
 });
  
 Route::get('storage/{filename}', function ($filename)

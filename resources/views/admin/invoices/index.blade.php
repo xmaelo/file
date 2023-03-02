@@ -3,6 +3,23 @@
 @section('content')
 <div class="content-wrapper">
     <div class="container-fluid">
+        <div class="modal" id="modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <a href="#" class="close" role="button" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </a>
+              <h5 class="modal-title">Modal title</h5>
+              <p>
+                This is the modal content. Almost any type of content can be presented to the user here.
+              </p>
+              <div class="text-right mt-20"> <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
+                <a href="#" class="btn mr-5" role="button">Close</a>
+                <a href="#" class="btn btn-primary" role="button">I understand</a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row row-eq-spacing align-items-center">
             <div class="col-12 col-sm-auto mb-sm-0 mb-20">
                 <button id="back" class="btn">
@@ -39,6 +56,11 @@
                             </h1>
                         </div>
                     </div>
+                    @if (Session::get('success'))
+                        <div class="alert alert-success mb-20">
+                            {{ Session::get('success') }}
+                        </div>
+                    @endif
                     <div class="table-responsive" id="Outstanding">
                         <table class="table-bordered table">
                             <thead>
@@ -65,7 +87,11 @@
 		                                <td>{{ $seller_invoice->created_at }}</td>
 		                                <td>{{ $seller_invoice->deadline }}</td>
 		                                <td>CHF {{ number_format($seller_invoice->total, 0, ",", "'") }}.00</td>
-		                                <td>action </td>
+		                                <td>
+                                                <button onclick="mark_as_paid({{ $seller_invoice->id }}, {{ $seller_invoice->ref_number }})" class="btn btn-primary btn-square mr-5" @if ($seller_invoice->paid) disabled @endif>
+                                                    <i class="fa fa-check"></i>
+                                                </button>
+                                         </td>
 		                            </tr>
                                 @empty
                                 <tr>
@@ -125,7 +151,7 @@
 			                        <th>Invoice type</th>
 			                        <th>Invoice date</th>
 			                        <th>Paid date</th>
-			                        <th>Total</th>
+			                        <th>Total</th> 
                                 </tr>
                             </thead>
 
@@ -158,6 +184,13 @@
         </div>
     </div>
     <script type="text/javascript">
+        
+        function mark_as_paid(id, ref){
+           
+            return window.location.href = "/admin/invoices/"+id
+
+            
+        }
     	$("#Paid").css("display","none");
     	$("#Late").css("display","none");
     	$('input[type=radio][name=invoicetype]').on('change', function() {

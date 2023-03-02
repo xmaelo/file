@@ -13,8 +13,13 @@ class Kernel extends ConsoleKernel
      * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
      * @return void
      */
+    protected $commands = [
+        Commands\StartJob::class,
+    ];
+
     protected function schedule(Schedule $schedule)
-    {
+    {   
+        $schedule->command('invoice:cron')->dailyAt('05:00');
         // $schedule->command('inspire')->hourly();
     }
 

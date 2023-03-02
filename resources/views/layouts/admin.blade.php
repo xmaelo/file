@@ -22,7 +22,8 @@
     <script src="/assets/js/jquery-3.6.0.min.js"></script>
     <script src="/assets/dist/js/select2.min.js"></script>
     <script src="/admin-assets/tpicker/lib/tpicker.js"></script>
-    <script src="/admin-assets/flatpickr/dist/flatpickr.js"></script>
+    <script src="/admin-assets/tpicker/lib/tpicker.js"></script>
+    <script src="/admin-assets/js/sweetaler.js"></script>
 </head>
 
 <body class="dark-mode with-custom-css-scrollbars with-custom-webkit-scrollbars">
