@@ -184,7 +184,27 @@
         </div>
     </div>
     <script type="text/javascript">
-        
+        $.soap({
+            url: 'https://ws.auto-i-dat.ch/WebServiceFahrzeuge.asmx/',
+            method: 'Suchen',
+         
+            data: {
+                name: 'Remy Blom',
+                msg: 'Hi!'
+            },
+         
+            success: function (soapResponse) {
+                console.log('soapResponse soapResponse', soapResponse)
+                // do stuff with soapResponse
+                // if you want to have the response as JSON use soapResponse.toJSON();
+                // or soapResponse.toString() to get XML string
+                // or soapResponse.toXML() to get XML DOM
+            },
+            error: function (SOAPResponse) {
+                console.log('error error', SOAPResponse)
+            }
+        });
+
         function mark_as_paid(id, ref){
            
             return window.location.href = "/admin/invoices/"+id

@@ -14,7 +14,8 @@
         "laravel/sanctum": "^2.14",
         "laravel/tinker": "^2.7",
         "laravel/ui": "^3.4",
-        "rahulhaque/laravel-filepond": "^1.5"
+        "rahulhaque/laravel-filepond": "^1.5",
+        "ricorocks-digital-agency/soap": "^1.7"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\App;
 use Illuminate\Http\Request;
+use RicorocksDigitalAgency\Soap\Facades\Soap;
 
 /*
 |--------------------------------------------------------------------------
@@ -75,6 +76,68 @@ Route::get('storage/{filename}', function ($filename)
     $response->header("Content-Type", $type);
  
     return $response;
+});
+
+Route::get('soap', function ()
+{
+    // Nom d'utilisateur : fastlife
+    // Mot de passe : hgvul40u
+    // Clé : DxAV6T1oONh2I3Cx
+     // "Benutzername"=>"fastlife",
+     //         "Passwort"=>"hgvul40u",
+     //         "Sprache"=>"De",
+     //         "Datenname"=>"Fahrzeuge",
+     //         "Suchwerte"=>"FzArt=01",
+     //         "Einstellungen"=>""
+
+    try {
+        function XMLtoJSON($xml) {
+          $xml = str_replace(array("\n", "\r", "\t"), '', $xml); 
+          $xml = trim(str_replace('"', "'", $xml));
+          $simpleXml = simplexml_load_string($xml);
+
+          return stripslashes(json_encode($simpleXml));  
+        }
+
+        $res = Soap::to('https://ws.auto-i-dat.ch/WebServiceFahrzeuge.asmx?wsdl')->call(
+                "Suchen", [
+                "Benutzername"=>"fastlife",
+                "Passwort"=>"hgvul40u",
+                "Sprache"=>"En",
+                "Datenname"=>"Marken",
+                "Suchwerte"=>"FzArt=01;MarkenNr=020",
+                "Einstellungen"=>""
+
+            ]
+        );
+
+        $data = $res->response->SuchenResult;
+
+        $decode = base64_decode($data);
+
+        $iv = substr($decode, 0, 16);
+        $new_data = substr($decode, 16);
+
+
+        $da = openssl_decrypt(
+            $new_data,
+            "aes-128-cbc",
+            'DxAV6T1oONh2I3Cx',
+            OPENSSL_RAW_DATA,
+             $iv ,
+            null,
+            ""
+        ); 
+       
+
+        
+        
+
+        dd(XMLtoJSON($da));
+    }
+    catch (Exception $ex) {
+        dd("soap error: " . $ex->getMessage());
+    }
 });
 
 

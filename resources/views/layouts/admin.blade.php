@@ -24,6 +24,7 @@
     <script src="/admin-assets/tpicker/lib/tpicker.js"></script>
     <script src="/admin-assets/tpicker/lib/tpicker.js"></script>
     <script src="/admin-assets/js/sweetaler.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.soap@1.7.3/jquery.soap.min.js"></script>
 </head>
 
 <body class="dark-mode with-custom-css-scrollbars with-custom-webkit-scrollbars">
