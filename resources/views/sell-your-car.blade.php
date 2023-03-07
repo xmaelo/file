@@ -35,11 +35,29 @@ Sell Your Car
             @csrf
             <div class="col-12">
                 <div class="mb-4">
-                    <h1 class="h2 mb-0">Sell your car</h1>
+                    <h1 class="h2 mb-0">Sell your car</h1> 
                 </div>
                 <section class="card card-body mb-4 p-4 shadow-sm">
                     <h2 class="h4 mb-4"><i class="fi-info-circle text-primary fs-5 mt-n1 me-2"></i>Article</h2>
                     <div class="row">
+                        <div class="col-12">
+                            <div class="alert alert-danger" id="vinError" style="display: none;" role="alert">
+                              Please fill correctly vin number !
+                            </div>
+                            <div class="input-group mb-3">
+                              <button class="btn btn-outline-secondary" type="button" id="button-addon1">VIN Number</button>
+                              <input type="text" value="WAUDEXTESTSTUB004" id="vinNumber" class="form-control" placeholder="Pleace enter your vin number" aria-label="n" aria-describedby="button-addon1">
+                             <button class="btn btn-success" id="chechVin" type="button">
+
+                                <span style="display: none;" class="spinner-border spinner-border-sm" id="Spinner" role="status" aria-hidden="true"></span>
+                                <span style="display: none;" class="" id="Loading" >Loading...</span>
+                                <i class="fi-arrow-right me-2" id="Icon"></i>
+                                <span  class="" id="Label" > Auto fill form</span>
+                                 
+                             </button>
+                                </div>
+                            
+                        </div>
                         <div class="col-12 col-md-6">
                             <div class="row align-items-center mb-3">
                                 <div class="col-12 col-md-4">
@@ -90,7 +108,7 @@ Sell Your Car
                                     <select class="form-select" id="doors" name="doors" required>
                                         <option value="2" selected>2</option>
                                         <option value="3">3</option>
-                                        <option value="4">4</option>
+                                        <option value="4" >4</option>
                                         <option value="5">5</option>
                                         <option value="6">6</option>
                                         <option value="7">7</option>
@@ -624,5 +642,66 @@ Sell Your Car
             </div>
         </form>
     </div>
+    <script type="text/javascript">
+        //WAUDEXTESTSTUB004
+        $('#chechVin').click(function(_self) {
+            const vinNumber = $('#vinNumber').val();
+
+            if(!vinNumber || vinNumber && vinNumber.length != 17){
+                 $('#chechVin').removeAttr("disabled")
+                return $('#vinError').css('display', "block")
+            }
+             $('#chechVin').attr("disabled", true)
+            $('#vinError').css('display', "none")
+
+            $('#Label').css('display', "none")
+            $('#Icon').css('display', "none")
+
+            $('#Spinner').removeAttr('style')
+            $('#Loading').removeAttr('style')
+
+            fetch("/soap/"+vinNumber)
+                .then((response) => response.json())
+                .then((data) => { 
+                    $('#chechVin').removeAttr("disabled")
+
+                    $('#Spinner').css('display', "none")
+                    $('#Loading').css('display', "none")
+
+                    $('#Label').removeAttr('style')
+                    $('#Icon').removeAttr('style')
+
+                    $("#brand").val(data?.DatenAutoi?.Fahrzeuge?.Marke)
+                    $("#model").val(data?.DatenAutoi?.Fahrzeuge?.ModellDe)
+                    $("#type").val(data?.DatenAutoi?.Fahrzeuge?.TypDe)
+                    $('#doors option[value="'+data?.DatenAutoi?.Fahrzeuge["Türen"]+'"]').attr("selected",true);
+
+                    $('#seats option[value="'+data?.DatenAutoi?.Fahrzeuge["Plätze"]+'"]').attr("selected",true);
+
+                    $("#model-number").val(data?.DatenAutoi?.Fahrzeuge?.Modelljahr)
+                    $("#displacement").val(data?.DatenAutoi?.Fahrzeuge?.Hubraum)
+                    $("#factory-price").val(data?.DatenAutoi?.Fahrzeuge?.NettoPreis)
+                    $("#performance-kw").val(data?.DatenAutoi?.Fahrzeuge?.GesamtKW)
+                    $("#performance-hp").val(data?.DatenAutoi?.Fahrzeuge?.GesamtPS)
+
+                    console.log(data)
+                    $("#serial-equipments").val(data?.DatenVIN?.Vehicle?.DatECodeEquipment?.EquipmentPosition.map(e => e.Description).join(', '))
+                    $("#special-equipments").val(data?.DatenVIN?.Vehicle?.Equipments?.Equipment.map(e => e.EquipmentLabeling).join(', '))
+                }
+            ).catch(e => {
+                console.log('error soap', e)
+                $('#chechVin').removeAttr("disabled")
+
+                $('#Spinner').css('display', "none")
+                $('#Loading').css('display', "none")
+
+                $('#Label').removeAttr('style')
+                $('#Icon').removeAttr('style')
+
+            })
+        });
+
+            
+    </script>
 </section>
 @endsection

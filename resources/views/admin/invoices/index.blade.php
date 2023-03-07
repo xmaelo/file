@@ -3,23 +3,11 @@
 @section('content')
 <div class="content-wrapper">
     <div class="container-fluid">
-        <div class="modal" id="modal" tabindex="-1" role="dialog">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <a href="#" class="close" role="button" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </a>
-              <h5 class="modal-title">Modal title</h5>
-              <p>
-                This is the modal content. Almost any type of content can be presented to the user here.
-              </p>
-              <div class="text-right mt-20"> <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
-                <a href="#" class="btn mr-5" role="button">Close</a>
-                <a href="#" class="btn btn-primary" role="button">I understand</a>
-              </div>
-            </div>
-          </div>
+        
+        <div id="dialog-confirm" style="visibility: hidden;" title="Confirmation">
+          <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>Do you really want to mark this bill as paid ?</p>
         </div>
+
         <div class="row row-eq-spacing align-items-center">
             <div class="col-12 col-sm-auto mb-sm-0 mb-20">
                 <button id="back" class="btn">
@@ -67,7 +55,8 @@
                                 <tr>
                                     <th>ID</th>
 			                        <th>Invoice</th>
-			                        <th>Invoice type</th>
+			                        <th>Owner</th>
+                                    <th>Invoice type</th>
 			                        <th>Invoice date</th>
 			                        <th>Invoice deadline</th>
 			                        <th>Total</th>
@@ -76,13 +65,14 @@
                             </thead>
                             <tbody id="Outstanding">
                                 @forelse($outstanding_invoices as $seller_invoice)
-		                            <tr>
+		                            <tr> 
 		                                <td>{{ $loop->index+1  }}</td>
-		                                <td style="text-align: center;">
+		                                <td>
 		                                    <a href="{{'/storage/'.$seller_invoice->invoice}}" target="_blank">
 		                                        <i class="fa fa-file-invoice me-2" ></i>
 		                                    </a>
 		                                </td>
+                                        <td>{{ $seller_invoice->first_name }} {{ $seller_invoice->surname }}</td>
 		                                <td>{{ $seller_invoice->type }}</td>
 		                                <td>{{ $seller_invoice->created_at }}</td>
 		                                <td>{{ $seller_invoice->deadline }}</td>
@@ -109,6 +99,7 @@
                                 <tr>
                                     <th>ID</th>
 			                        <th>Invoice</th>
+                                    <th>Owner</th>
 			                        <th>Invoice type</th>
 			                        <th>Invoice date</th>
 			                        <th>Invoice deadline</th>
@@ -120,16 +111,21 @@
                                 @forelse($late_invoices as $seller_invoice)
 		                            <tr>
 		                                <td>{{ $loop->index+1  }}</td>
-		                                <td style="text-align: center;">
+		                                <td>
 		                                    <a href="{{'/storage/'.$seller_invoice->invoice}}" target="_blank">
                                                 <i class="fa fa-file-invoice me-2" ></i>
                                             </a>
 		                                </td>
+                                         <td>{{ $seller_invoice->first_name }} {{ $seller_invoice->surname }}</td>
 		                                <td>{{ $seller_invoice->type }}</td>
 		                                <td>{{ $seller_invoice->created_at }}</td>
 		                                <td>{{ $seller_invoice->deadline }}</td>
 		                                <td>CHF {{ number_format($seller_invoice->total, 0, ",", "'") }}.00</td>
-		                                <td>action </td>
+		                                <td>
+                                            <button onclick="mark_as_paid({{ $seller_invoice->id }}, {{ $seller_invoice->ref_number }})" class="btn btn-primary btn-square mr-5" @if ($seller_invoice->paid) disabled @endif>
+                                                    <i class="fa fa-check"></i>
+                                                </button>
+                                        </td>
 		                            </tr>
                                 @empty
                                 <tr>
@@ -148,6 +144,7 @@
                                 <tr>
                                     <th>ID</th>
 			                        <th>Invoice</th>
+                                    <th>Owner</th>
 			                        <th>Invoice type</th>
 			                        <th>Invoice date</th>
 			                        <th>Paid date</th>
@@ -159,12 +156,13 @@
                                 @forelse($paid_invoices as $paid_invoice)
 		                            <tr>
 		                                <td>{{ $loop->index+1  }}</td>
-		                                <td style="text-align: center;">
+		                                <td>
 		                                    <a href="{{'/storage/'.$paid_invoice->invoice}}" target="_blank">
                                                 <i class="fa fa-file-invoice me-2" ></i>
                                             </a>
 		                                </td>
-		                                <td>{{ $paid_invoice->type }}</td>
+		                                <td>{{ $seller_invoice->first_name }} {{ $seller_invoice->surname }}</td>
+                                        <td>{{ $paid_invoice->type }}</td>
 		                                <td>{{ $paid_invoice->created_at }}</td>
 		                                <td>{{ $paid_invoice->paid_date }}</td>
 		                                <td>CHF {{ number_format($paid_invoice->total, 0, ",", "'") }}.00</td>
@@ -184,31 +182,27 @@
         </div>
     </div>
     <script type="text/javascript">
-        $.soap({
-            url: 'https://ws.auto-i-dat.ch/WebServiceFahrzeuge.asmx/',
-            method: 'Suchen',
-         
-            data: {
-                name: 'Remy Blom',
-                msg: 'Hi!'
-            },
-         
-            success: function (soapResponse) {
-                console.log('soapResponse soapResponse', soapResponse)
-                // do stuff with soapResponse
-                // if you want to have the response as JSON use soapResponse.toJSON();
-                // or soapResponse.toString() to get XML string
-                // or soapResponse.toXML() to get XML DOM
-            },
-            error: function (SOAPResponse) {
-                console.log('error error', SOAPResponse)
-            }
-        });
+       
 
         function mark_as_paid(id, ref){
-           
-            return window.location.href = "/admin/invoices/"+id
-
+            $( "#dialog-confirm" ).removeAttr('style');
+            $( "#dialog-confirm" ).dialog({
+              resizable: false,
+              height: "auto",
+              width: 400,
+              modal: true,
+              buttons: {
+                "yes I confirm": function() 
+                {
+                  $( this ).dialog( "close" );
+                   return window.location.href = "/admin/invoices/"+id
+                },
+                Cancel: function() {
+                    $( "#dialog-confirm" ).css('visibility', 'hidden');
+                  $( this ).dialog( "close" );
+                }
+              }
+            });
             
         }
     	$("#Paid").css("display","none");

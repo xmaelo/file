@@ -681,6 +681,7 @@ function createInvoceSeller($cars, $user_id){
     ]);
     $horizontal_value += 30;
     $charges_total += publicationCharge();
+    //$charges_total = publicationCharge();
   }
 
   //foreach ($cars as $car) {
@@ -723,14 +724,21 @@ function createInvoceSeller($cars, $user_id){
       ]);
     }
     $horizontal_value += 30;
-  //}
-  $vat_total = $charges_total * (7.7 / 100);
+  
+  $pubPrice = publicationCharge();
+
+  $vat_total = $pubPrice * (7.7 / 100);
+
+  //$vat_total = $charges_total * (7.7 / 100);
+  //$vat_total = number_format((float)$vat_total, 2, '.', '');
   $vat_total = number_format((float)$vat_total, 2, '.', '');
 
-  $final_total = (float) ($charges_total + $vat_total);
+  $final_total = (float) ($pubPrice + $vat_total);
   $final_total_parts = explode('.', $final_total);
+  $charges_total = $pubPrice;
 
   $img->text($charges_total, 990, 950, function ($font) {
+
     $font->file('assets/fonts/Raleway-Bold.ttf');
     $font->size(23);
   });
@@ -789,12 +797,13 @@ function createInvoceSeller($cars, $user_id){
   });
 
   $invoice = uniqid() . '.jpg';
+
   $invoice_2 = uniqid() . '.jpg';
   $img->save($invoice);
   $seller2->save($invoice_2);
   $data = [
     'image' => $invoice,
-    'image2' => $invoice_2,
+    //'image2' => $invoice_2,
   ];
 
   $pdf = PDF::loadView('seller-invoice', $data);

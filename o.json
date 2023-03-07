@@ -1,0 +1,2003 @@
+{
+    "Info": {
+        "Status": "0",
+        "StatusMsg": "OK",
+        "Source": "1"
+    },
+    "DatenVIN": {
+        "Vehicle": {
+            "VIN": "WAUDEXTESTSTUB004",
+            "ManufacturerName": "Audi",
+            "BaseModelName": "A1 Sportback (8XA)(11.2011-u003E)",
+            "SubModelName": "Admired",
+            "ConstructionTime": "16.11.2013",
+            "DatECode": "010600450100003",
+            "DatECodeEquipment": {
+                "EquipmentPosition": [
+                    {
+                        "Description": "Motor 1,2 Ltr. - 63 kW TFSI",
+                        "DatEquipmentId": "96528"
+                    },
+                    {
+                        "Description": "Karosserie: 4-türig",
+                        "DatEquipmentId": "10004"
+                    },
+                    {
+                        "Description": "Getriebe 5-Gang",
+                        "DatEquipmentId": "75005"
+                    }
+                ]
+            },
+            "Equipments": {
+                "Equipment": [
+                    {
+                        "EquipmentLabeling": "Airbag Fahrer-/Beifahrerseite",
+                        "ManufacturerCode": "4UE",
+                        "EquipmentNumber": "26803",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "1"
+                    },
+                    {
+                        "EquipmentLabeling": "Anti-Blockier-System (ABS)",
+                        "ManufacturerCode": {},
+                        "EquipmentNumber": "40000",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "2"
+                    },
+                    {
+                        "EquipmentLabeling": "Antriebs-Schlupfregelung (ASR)",
+                        "ManufacturerCode": {},
+                        "EquipmentNumber": "70303",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "3"
+                    },
+                    {
+                        "EquipmentLabeling": "Antriebsart: Frontantrieb",
+                        "ManufacturerCode": "1X0",
+                        "EquipmentNumber": "70600",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "4"
+                    },
+                    {
+                        "EquipmentLabeling": "Außenoptik Audi exclusive schwarz",
+                        "ManufacturerCode": "4ZM",
+                        "EquipmentNumber": "11802",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "5"
+                    },
+                    {
+                        "EquipmentLabeling": "Außenspiegel asphärisch, links",
+                        "ManufacturerCode": "5SL",
+                        "EquipmentNumber": "15804",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "6"
+                    },
+                    {
+                        "EquipmentLabeling": "Außenspiegel elektr. verstellbar, beide",
+                        "ManufacturerCode": "6XC",
+                        "EquipmentNumber": "15107",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "7"
+                    },
+                    {
+                        "EquipmentLabeling": "Außenspiegel konvex, rechts",
+                        "ManufacturerCode": "5RU",
+                        "EquipmentNumber": "15702",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "8"
+                    },
+                    {
+                        "EquipmentLabeling": "Außenspiegel Wagenfarbe",
+                        "ManufacturerCode": {},
+                        "EquipmentNumber": "15807",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "9"
+                    },
+                    {
+                        "EquipmentLabeling": "Bremsassistent",
+                        "ManufacturerCode": {},
+                        "EquipmentNumber": "40799",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "10"
+                    },
+                    {
+                        "EquipmentLabeling": "Dynamik-Fahrwerk",
+                        "ManufacturerCode": "UC0",
+                        "EquipmentNumber": "42095",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "11"
+                    },
+                    {
+                        "EquipmentLabeling": "Elektron. Differentialsperre (EDS)",
+                        "ManufacturerCode": {},
+                        "EquipmentNumber": "70108",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "12"
+                    },
+                    {
+                        "EquipmentLabeling": "Elektron. Stabilitäts-Programm (ESP)",
+                        "ManufacturerCode": "1AT",
+                        "EquipmentNumber": "70308",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "13"
+                    },
+                    {
+                        "EquipmentLabeling": "Exterieur-Paket S line",
+                        "ManufacturerCode": "2JD",
+                        "EquipmentNumber": "4008",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "14"
+                    },
+                    {
+                        "EquipmentLabeling": "Fensterheber elektrisch vorn",
+                        "ManufacturerCode": "4R1",
+                        "EquipmentNumber": "35001",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "15"
+                    },
+                    {
+                        "EquipmentLabeling": "Gepäckraumabdeckung / Rollo",
+                        "ManufacturerCode": {},
+                        "EquipmentNumber": "27400",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "16"
+                    },
+                    {
+                        "EquipmentLabeling": "Getriebe 5-Gang",
+                        "ManufacturerCode": "G0C",
+                        "EquipmentNumber": "75005",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "17"
+                    },
+                    {
+                        "EquipmentLabeling": "Heckleuchten LED",
+                        "ManufacturerCode": "8SK",
+                        "EquipmentNumber": "18802",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "18"
+                    },
+                    {
+                        "EquipmentLabeling": "Isofix-Aufnahmen für Kindersitz",
+                        "ManufacturerCode": "3B3",
+                        "EquipmentNumber": "39307",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "19"
+                    },
+                    {
+                        "EquipmentLabeling": "Karosserie: 4-türig",
+                        "ManufacturerCode": "0A2",
+                        "EquipmentNumber": "10004",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "20"
+                    },
+                    {
+                        "EquipmentLabeling": "Klimaanlage",
+                        "ManufacturerCode": "9AB",
+                        "EquipmentNumber": "28900",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "21"
+                    },
+                    {
+                        "EquipmentLabeling": "Kopf-Airbag-System (Sideguard)",
+                        "ManufacturerCode": "4X3",
+                        "EquipmentNumber": "26901",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "22"
+                    },
+                    {
+                        "EquipmentLabeling": "LM-Felgen",
+                        "ManufacturerCode": "CP3",
+                        "EquipmentNumber": "48348",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "23"
+                    },
+                    {
+                        "EquipmentLabeling": "Motor 1,2 Ltr. - 63 kW TFSI",
+                        "ManufacturerCode": {},
+                        "EquipmentNumber": "96528",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "24"
+                    },
+                    {
+                        "EquipmentLabeling": "Nebelscheinwerfer integriert",
+                        "ManufacturerCode": "8WB",
+                        "EquipmentNumber": "18301",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "25"
+                    },
+                    {
+                        "EquipmentLabeling": "Reifen-Reparaturkit",
+                        "ManufacturerCode": "1G8",
+                        "EquipmentNumber": "68802",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "26"
+                    },
+                    {
+                        "EquipmentLabeling": "Rücksitzlehne geteilt/klappbar",
+                        "ManufacturerCode": "3NZ",
+                        "EquipmentNumber": "33508",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "27"
+                    },
+                    {
+                        "EquipmentLabeling": "Schadstoffarm nach Abgasnorm Euro 5",
+                        "ManufacturerCode": "7MJ",
+                        "EquipmentNumber": "77225",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "28"
+                    },
+                    {
+                        "EquipmentLabeling": "Servolenkung",
+                        "ManufacturerCode": "1N4",
+                        "EquipmentNumber": "69800",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "29"
+                    },
+                    {
+                        "EquipmentLabeling": "Sitz vorn links höhenverstellbar",
+                        "ManufacturerCode": "3L1",
+                        "EquipmentNumber": "32704",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "30"
+                    },
+                    {
+                        "EquipmentLabeling": "Sitzbezug / Polsterung: Stoff Zeitgeist",
+                        "ManufacturerCode": "N0L",
+                        "EquipmentNumber": "29714",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "31"
+                    },
+                    {
+                        "EquipmentLabeling": "Start/Stop-Anlage",
+                        "ManufacturerCode": "7L6",
+                        "EquipmentNumber": "77601",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "32"
+                    },
+                    {
+                        "EquipmentLabeling": "Staub- und Pollenfilter",
+                        "ManufacturerCode": "2V1",
+                        "EquipmentNumber": "29108",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "33"
+                    },
+                    {
+                        "EquipmentLabeling": "Tagfahrlicht",
+                        "ManufacturerCode": "8K4",
+                        "EquipmentNumber": "18904",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "34"
+                    },
+                    {
+                        "EquipmentLabeling": "Wegfahrsperre (elektronisch)",
+                        "ManufacturerCode": "7AA",
+                        "EquipmentNumber": "38106",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "35"
+                    },
+                    {
+                        "EquipmentLabeling": "Wärmeschutzverglasung grün getönt",
+                        "ManufacturerCode": "4GF",
+                        "EquipmentNumber": "22304",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "36"
+                    },
+                    {
+                        "EquipmentLabeling": "Zentralverriegelung mit Fernbedienung",
+                        "ManufacturerCode": "4K4",
+                        "EquipmentNumber": "35301",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "37"
+                    },
+                    {
+                        "EquipmentLabeling": "Dachhimmel Stoff, schwarz",
+                        "ManufacturerCode": "6NQ",
+                        "EquipmentNumber": "27805",
+                        "EquipmentStandard": {},
+                        "EquipmentIndex": "38"
+                    },
+                    {
+                        "EquipmentLabeling": "Dachkuppel Kontrastfarbe (Dach, Dachbogen und Dachkantenspoiler)",
+                        "ManufacturerCode": "6H4",
+                        "EquipmentNumber": "16231",
+                        "EquipmentStandard": {},
+                        "EquipmentIndex": "39"
+                    },
+                    {
+                        "EquipmentLabeling": "Fahrer-Informations-System (FIS)",
+                        "ManufacturerCode": "9Q7",
+                        "EquipmentNumber": "25805",
+                        "EquipmentStandard": {},
+                        "EquipmentIndex": "40"
+                    },
+                    {
+                        "EquipmentLabeling": "Innenlicht-Paket LED",
+                        "ManufacturerCode": "QQ1",
+                        "EquipmentNumber": "3915",
+                        "EquipmentStandard": {},
+                        "EquipmentIndex": "41"
+                    },
+                    {
+                        "EquipmentLabeling": "Media-Paket",
+                        "ManufacturerCode": "WMU",
+                        "EquipmentNumber": "1178",
+                        "EquipmentStandard": {},
+                        "EquipmentIndex": "42"
+                    },
+                    {
+                        "EquipmentLabeling": "Perleffekt-Lackierung",
+                        "ManufacturerCode": "2Y",
+                        "EquipmentNumber": "11109",
+                        "EquipmentStandard": {},
+                        "EquipmentIndex": "43"
+                    },
+                    {
+                        "EquipmentLabeling": "Verglasung hinten abgedunkelt",
+                        "ManufacturerCode": "4KF",
+                        "EquipmentNumber": "22202",
+                        "EquipmentStandard": {},
+                        "EquipmentIndex": "44"
+                    },
+                    {
+                        "EquipmentLabeling": "Xenon-Scheinwerfer Plus (Abblend- und Fernlicht)",
+                        "ManufacturerCode": "PX4",
+                        "EquipmentNumber": "18505",
+                        "EquipmentStandard": {},
+                        "EquipmentIndex": "45"
+                    },
+                    {
+                        "EquipmentLabeling": "Nichtraucherausführung",
+                        "ManufacturerCode": "9JA",
+                        "EquipmentNumber": "2904",
+                        "EquipmentStandard": {},
+                        "EquipmentIndex": "46"
+                    },
+                    {
+                        "EquipmentLabeling": "Bauteile mit besonderer Oberfläche",
+                        "ManufacturerCode": "6FI",
+                        "EquipmentNumber": "15820",
+                        "EquipmentStandard": {},
+                        "EquipmentIndex": "47"
+                    },
+                    {
+                        "EquipmentLabeling": "Dachspoiler",
+                        "ManufacturerCode": "5J3",
+                        "EquipmentNumber": "20935",
+                        "EquipmentStandard": {},
+                        "EquipmentIndex": "48"
+                    },
+                    {
+                        "EquipmentLabeling": "Ledersportmultifunktionslenkrad",
+                        "ManufacturerCode": "1XW",
+                        "EquipmentNumber": "69010",
+                        "EquipmentStandard": {},
+                        "EquipmentIndex": "49"
+                    },
+                    {
+                        "EquipmentLabeling": "Landesverkaufsprogramm Deutschland",
+                        "ManufacturerCode": "X0A",
+                        "EquipmentNumber": "99954",
+                        "EquipmentStandard": "S",
+                        "EquipmentIndex": "50"
+                    }
+                ]
+            },
+            "Colors": {
+                "Color": [
+                    {
+                        "Description": "Gletscherweiß Metallic",
+                        "ColorCode": "2Y",
+                        "ColorId": "A1"
+                    },
+                    {
+                        "Description": "Brillantschwarz",
+                        "ColorCode": "A2",
+                        "ColorId": "A2"
+                    },
+                    {
+                        "Description": "schwarz-schwarz/schwarz-schwarz/schwarz/titangrau",
+                        "ColorCode": "YM",
+                        "ColorId": "I1"
+                    },
+                    {
+                        "Description": "schwarz-schwarz",
+                        "ColorCode": {},
+                        "ColorId": "PF"
+                    },
+                    {
+                        "Description": "Sitzbezüge in Stoff",
+                        "ColorCode": {},
+                        "ColorId": "PM"
+                    }
+                ]
+            }
+        }
+    },
+    "DatenAutoi": {
+        "Fahrzeuge": {
+            "FzKey": "173317",
+            "FzArt": "01",
+            "Marke": "Audi",
+            "ModellDe": "A1 Sportback",
+            "TypDe": "1.2 TFSI Start",
+            "ProdVon": "201401",
+            "ProdBis": "201501",
+            "LetzterNP": "21700",
+            "NettoPreis": "0",
+            "Aufbau": "6",
+            "FzKlasse": "2",
+            "Türen": "5",
+            "Hubraum": "1197",
+            "Zylinder": "4",
+            "PS": "86",
+            "KW": "63",
+            "Treibstoff": "2",
+            "Antrieb": "2",
+            "Getriebe": "1",
+            "Gänge": "5",
+            "Plätze": "4",
+            "GewLeer": "1140",
+            "GewGesamt": "1575",
+            "VerbMix": "5.1",
+            "VerbStadt": "6.2",
+            "VerbLand": "4.4",
+            "VerbNorm": "0",
+            "VerbKat": "C",
+            "CO2": "118",
+            "Nutzlast": "0",
+            "Radstand": "0",
+            "Anhängelast": "1000",
+            "Werkscode": "8XAAA4ST",
+            "Einstufung": "0",
+            "MarkenNr": "060",
+            "ModGrpKey": "104059",
+            "ModKurzBez": "A1",
+            "SystemKW": "0",
+            "Modelljahr": "2014",
+            "Ausstattung": "Start",
+            "Tankinhalt": "0",
+            "Reichweite": "0",
+            "ModellTypDe": "A1 Sportback 1.2 TFSI Start",
+            "BattKapazität": "0",
+            "EnergieVerbrauch": "0",
+            "GesamtPS": "86",
+            "GesamtKW": "63",
+            "Importcode": {},
+            "MutDatum": "20191107",
+            "FzArtExtern": "01",
+            "LetztesMJ": "2015",
+            "DatenOptionen": {
+                "Optionen": [
+                    {
+                        "OptKey": "115326",
+                        "BezDe": "Anschlussgarantie für das 4. Jahr/ 80u0027000 km",
+                        "Inklusiv": "0",
+                        "Preis": "270",
+                        "OptCode": "EA5",
+                        "PackCode": "0",
+                        "Gruppe": "0",
+                        "SuchCode": {},
+                        "Gruppe2": "2010",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "115327",
+                        "BezDe": "Anschlussgarantie für das 4. Jahr/ 120u0027000 km",
+                        "Inklusiv": "0",
+                        "Preis": "420",
+                        "OptCode": "EA6",
+                        "PackCode": "0",
+                        "Gruppe": "0",
+                        "SuchCode": {},
+                        "Gruppe2": "2010",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "115328",
+                        "BezDe": "Anschlussgarantie für das 4.+ 5. Jahr/ 100u0027000 km",
+                        "Inklusiv": "0",
+                        "Preis": "590",
+                        "OptCode": "EA8",
+                        "PackCode": "0",
+                        "Gruppe": "0",
+                        "SuchCode": {},
+                        "Gruppe2": "2010",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "115329",
+                        "BezDe": "Anschlussgarantie für das 4.+ 5. Jahr/ 150u0027000 km",
+                        "Inklusiv": "0",
+                        "Preis": "930",
+                        "OptCode": "EA9",
+                        "PackCode": "0",
+                        "Gruppe": "0",
+                        "SuchCode": {},
+                        "Gruppe2": "2010",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "112426",
+                        "BezDe": "Pack Innenlicht LED",
+                        "Inklusiv": "0",
+                        "Preis": "200",
+                        "OptCode": "QQ1",
+                        "PackCode": "1",
+                        "Gruppe": "1",
+                        "SuchCode": {},
+                        "Gruppe2": "9410",
+                        "EquipmentIndexMatch": "41",
+                        "DatenOptionenPack": {
+                            "OptionenPack": {
+                                "OptKey": "102090",
+                                "BezDe": "Details siehe Preisliste"
+                            }
+                        }
+                    },
+                    {
+                        "OptKey": "109483",
+                        "BezDe": "Pack Ablage",
+                        "Inklusiv": "0",
+                        "Preis": "160",
+                        "OptCode": "QE1",
+                        "PackCode": "1",
+                        "Gruppe": "1",
+                        "SuchCode": {},
+                        "Gruppe2": "9410",
+                        "EquipmentIndexMatch": {},
+                        "DatenOptionenPack": {
+                            "OptionenPack": {
+                                "OptKey": "102090",
+                                "BezDe": "Details siehe Preisliste"
+                            }
+                        }
+                    },
+                    {
+                        "OptKey": "111943",
+                        "BezDe": "Pack Gepäckraum",
+                        "Inklusiv": "0",
+                        "Preis": "140",
+                        "OptCode": "QE4",
+                        "PackCode": "1",
+                        "Gruppe": "1",
+                        "SuchCode": {},
+                        "Gruppe2": "9410",
+                        "EquipmentIndexMatch": {},
+                        "DatenOptionenPack": {
+                            "OptionenPack": {
+                                "OptKey": "102090",
+                                "BezDe": "Details siehe Preisliste"
+                            }
+                        }
+                    },
+                    {
+                        "OptKey": "116180",
+                        "BezDe": "Pack Gepäckraum + Ablagepaket",
+                        "Inklusiv": "0",
+                        "Preis": "290",
+                        "OptCode": "QE5",
+                        "PackCode": "1",
+                        "Gruppe": "1",
+                        "SuchCode": {},
+                        "Gruppe2": "9410",
+                        "EquipmentIndexMatch": {},
+                        "DatenOptionenPack": {
+                            "OptionenPack": {
+                                "OptKey": "102090",
+                                "BezDe": "Details siehe Preisliste"
+                            }
+                        }
+                    },
+                    {
+                        "OptKey": "112396",
+                        "BezDe": "Pack Exterieur S-Line",
+                        "Inklusiv": "0",
+                        "Preis": "2310",
+                        "OptCode": "PQD",
+                        "PackCode": "1",
+                        "Gruppe": "1",
+                        "SuchCode": {},
+                        "Gruppe2": "9410",
+                        "EquipmentIndexMatch": {},
+                        "DatenOptionenPack": {
+                            "OptionenPack": {
+                                "OptKey": "102090",
+                                "BezDe": "Details siehe Preisliste"
+                            }
+                        }
+                    },
+                    {
+                        "OptKey": "120301",
+                        "BezDe": "Pack Intro",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": "WKD",
+                        "PackCode": "1",
+                        "Gruppe": "1",
+                        "SuchCode": "9,17",
+                        "Gruppe2": "9410",
+                        "EquipmentIndexMatch": {},
+                        "DatenOptionenPack": {
+                            "OptionenPack": [
+                                {
+                                    "OptKey": "105857",
+                                    "BezDe": "Sport-Lederlenkrad 3-Speichen"
+                                },
+                                {
+                                    "OptKey": "107159",
+                                    "BezDe": "Vordersitze höhenverstellbar"
+                                },
+                                {
+                                    "OptKey": "115698",
+                                    "BezDe": "Fussmatten hinten"
+                                },
+                                {
+                                    "OptKey": "103762",
+                                    "BezDe": "Nebelscheinwerfer"
+                                },
+                                {
+                                    "OptKey": "115701",
+                                    "BezDe": "Leichtmetallräder 15u0027 7-Arm Design"
+                                },
+                                {
+                                    "OptKey": "102090",
+                                    "BezDe": "Details siehe Preisliste"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "OptKey": "115699",
+                        "BezDe": "Pack Advance",
+                        "Inklusiv": "0",
+                        "Preis": "1540",
+                        "OptCode": "WKF",
+                        "PackCode": "1",
+                        "Gruppe": "1",
+                        "SuchCode": "5,29",
+                        "Gruppe2": "9410",
+                        "EquipmentIndexMatch": {},
+                        "DatenOptionenPack": {
+                            "OptionenPack": [
+                                {
+                                    "OptKey": "109100",
+                                    "BezDe": "Geschwindigkeitsregelanlage"
+                                },
+                                {
+                                    "OptKey": "108735",
+                                    "BezDe": "Ablagepaket"
+                                },
+                                {
+                                    "OptKey": "103756",
+                                    "BezDe": "Aussenspiegel elektrisch verstellbar und heizbar"
+                                },
+                                {
+                                    "OptKey": "110944",
+                                    "BezDe": "Licht- und Regensensor"
+                                },
+                                {
+                                    "OptKey": "109212",
+                                    "BezDe": "Park-System hinten"
+                                },
+                                {
+                                    "OptKey": "103731",
+                                    "BezDe": "Mittelarmlehne vorne"
+                                },
+                                {
+                                    "OptKey": "103732",
+                                    "BezDe": "Fahrer-Informationssystem FIS"
+                                },
+                                {
+                                    "OptKey": "102090",
+                                    "BezDe": "Details siehe Preisliste"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "OptKey": "115725",
+                        "BezDe": "Pack Connectivity",
+                        "Inklusiv": "0",
+                        "Preis": "800",
+                        "OptCode": "PNV",
+                        "PackCode": "1",
+                        "Gruppe": "1",
+                        "SuchCode": {},
+                        "Gruppe2": "9410",
+                        "EquipmentIndexMatch": {},
+                        "DatenOptionenPack": {
+                            "OptionenPack": {
+                                "OptKey": "102090",
+                                "BezDe": "Details siehe Preisliste"
+                            }
+                        }
+                    },
+                    {
+                        "OptKey": "122551",
+                        "BezDe": "Pack Competition",
+                        "Inklusiv": "0",
+                        "Preis": "660",
+                        "OptCode": "YKL/YKJ",
+                        "PackCode": "1",
+                        "Gruppe": "1",
+                        "SuchCode": {},
+                        "Gruppe2": "9410",
+                        "EquipmentIndexMatch": {},
+                        "DatenOptionenPack": {
+                            "OptionenPack": {
+                                "OptKey": "102090",
+                                "BezDe": "Details siehe Preisliste"
+                            }
+                        }
+                    },
+                    {
+                        "OptKey": "122552",
+                        "BezDe": "Pack Competition plus",
+                        "Inklusiv": "0",
+                        "Preis": "2760",
+                        "OptCode": "YKM/YKK",
+                        "PackCode": "1",
+                        "Gruppe": "1",
+                        "SuchCode": {},
+                        "Gruppe2": "9410",
+                        "EquipmentIndexMatch": {},
+                        "DatenOptionenPack": {
+                            "OptionenPack": {
+                                "OptKey": "102090",
+                                "BezDe": "Details siehe Preisliste"
+                            }
+                        }
+                    },
+                    {
+                        "OptKey": "122553",
+                        "BezDe": "Pack Competition R18 interior",
+                        "Inklusiv": "0",
+                        "Preis": "810",
+                        "OptCode": "YIN",
+                        "PackCode": "1",
+                        "Gruppe": "1",
+                        "SuchCode": {},
+                        "Gruppe2": "9410",
+                        "EquipmentIndexMatch": {},
+                        "DatenOptionenPack": {
+                            "OptionenPack": [
+                                {
+                                    "OptKey": "113479",
+                                    "BezDe": "Dekoreinlagen"
+                                },
+                                {
+                                    "OptKey": "102090",
+                                    "BezDe": "Details siehe Preisliste"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "OptKey": "116396",
+                        "BezDe": "Pack Competition Aerodynamik",
+                        "Inklusiv": "0",
+                        "Preis": "2220",
+                        "OptCode": "YNE",
+                        "PackCode": "1",
+                        "Gruppe": "1",
+                        "SuchCode": {},
+                        "Gruppe2": "9410",
+                        "EquipmentIndexMatch": {},
+                        "DatenOptionenPack": {
+                            "OptionenPack": {
+                                "OptKey": "102090",
+                                "BezDe": "Details siehe Preisliste"
+                            }
+                        }
+                    },
+                    {
+                        "OptKey": "119791",
+                        "BezDe": "Pack Competition Aerodynamik/ Kontrastfarbe",
+                        "Inklusiv": "0",
+                        "Preis": "2330",
+                        "OptCode": "YNF",
+                        "PackCode": "1",
+                        "Gruppe": "1",
+                        "SuchCode": {},
+                        "Gruppe2": "9410",
+                        "EquipmentIndexMatch": {},
+                        "DatenOptionenPack": {
+                            "OptionenPack": {
+                                "OptKey": "102090",
+                                "BezDe": "Details siehe Preisliste"
+                            }
+                        }
+                    },
+                    {
+                        "OptKey": "121861",
+                        "BezDe": "Pack Lifestyle gold",
+                        "Inklusiv": "0",
+                        "Preis": "1490",
+                        "OptCode": "YKG",
+                        "PackCode": "1",
+                        "Gruppe": "1",
+                        "SuchCode": {},
+                        "Gruppe2": "9410",
+                        "EquipmentIndexMatch": {},
+                        "DatenOptionenPack": {
+                            "OptionenPack": {
+                                "OptKey": "102090",
+                                "BezDe": "Details siehe Preisliste"
+                            }
+                        }
+                    },
+                    {
+                        "OptKey": "121862",
+                        "BezDe": "Pack Lifestyle gold plus",
+                        "Inklusiv": "0",
+                        "Preis": "1790",
+                        "OptCode": "YKH",
+                        "PackCode": "1",
+                        "Gruppe": "1",
+                        "SuchCode": {},
+                        "Gruppe2": "9410",
+                        "EquipmentIndexMatch": {},
+                        "DatenOptionenPack": {
+                            "OptionenPack": {
+                                "OptKey": "102090",
+                                "BezDe": "Details siehe Preisliste"
+                            }
+                        }
+                    },
+                    {
+                        "OptKey": "121863",
+                        "BezDe": "Pack Lifestyle gold interieur",
+                        "Inklusiv": "0",
+                        "Preis": "890",
+                        "OptCode": "YIM",
+                        "PackCode": "1",
+                        "Gruppe": "1",
+                        "SuchCode": {},
+                        "Gruppe2": "9410",
+                        "EquipmentIndexMatch": {},
+                        "DatenOptionenPack": {
+                            "OptionenPack": {
+                                "OptKey": "102090",
+                                "BezDe": "Details siehe Preisliste"
+                            }
+                        }
+                    },
+                    {
+                        "OptKey": "120304",
+                        "BezDe": "Pack Foliensatz Competition Kontrastfarbe",
+                        "Inklusiv": "0",
+                        "Preis": "620",
+                        "OptCode": "YN?",
+                        "PackCode": "1",
+                        "Gruppe": "1",
+                        "SuchCode": {},
+                        "Gruppe2": "9410",
+                        "EquipmentIndexMatch": {},
+                        "DatenOptionenPack": {
+                            "OptionenPack": {
+                                "OptKey": "102090",
+                                "BezDe": "Details siehe Preisliste"
+                            }
+                        }
+                    },
+                    {
+                        "OptKey": "115713",
+                        "BezDe": "Alu-Optik inkl. Einstiegsleisten in Aluminium",
+                        "Inklusiv": "0",
+                        "Preis": "170",
+                        "OptCode": "GS1+7M3",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "3050",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "103779",
+                        "BezDe": "Zentralverriegelung mit Fernbedienung",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": "4K4",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": "23",
+                        "Gruppe2": "3065",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "115718",
+                        "BezDe": "Komfortschlüssel inkl. 2 Funkklappschlüssel",
+                        "Inklusiv": "0",
+                        "Preis": "510",
+                        "OptCode": "4F2",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "3065",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "116914",
+                        "BezDe": "Stop + Start System",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": {},
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": "41",
+                        "Gruppe2": "3065",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "103784",
+                        "BezDe": "Elektrische Fensterheber vorne",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": {},
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": "16",
+                        "Gruppe2": "3065",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "103756",
+                        "BezDe": "Aussenspiegel elektrisch verstellbar und heizbar",
+                        "Inklusiv": "0",
+                        "Preis": "140",
+                        "OptCode": "PAE",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "3065",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "103757",
+                        "BezDe": "Aussenspiegel elektrisch verstellbar/ heizbar und anklappbar",
+                        "Inklusiv": "0",
+                        "Preis": "340",
+                        "OptCode": "PAF",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "3065",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "110944",
+                        "BezDe": "Licht- und Regensensor",
+                        "Inklusiv": "0",
+                        "Preis": "170",
+                        "OptCode": "8N6",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "3065",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "103733",
+                        "BezDe": "Tempostat",
+                        "Inklusiv": "0",
+                        "Preis": "350",
+                        "OptCode": "8T2",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": "5",
+                        "Gruppe2": "3065",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "112440",
+                        "BezDe": "Panorama-Glasdach",
+                        "Inklusiv": "0",
+                        "Preis": "1230",
+                        "OptCode": "3FB",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": "38",
+                        "Gruppe2": "6010",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "107160",
+                        "BezDe": "Wärmeschutzverglasung",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": {},
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "6040",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "107904",
+                        "BezDe": "Frontscheibe mit grauem Colorstreifen",
+                        "Inklusiv": "0",
+                        "Preis": "90",
+                        "OptCode": "4GP",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "6040",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "107092",
+                        "BezDe": "Scheiben seitlich ab B-Säule und hinten getönt",
+                        "Inklusiv": "0",
+                        "Preis": "550",
+                        "OptCode": "4KF",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "6040",
+                        "EquipmentIndexMatch": "44"
+                    },
+                    {
+                        "OptKey": "103764",
+                        "BezDe": "Scheinwerfer Waschanlage",
+                        "Inklusiv": "0",
+                        "Preis": "350",
+                        "OptCode": "8X1",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "6050",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "112439",
+                        "BezDe": "Ohne Modellbezeichnung",
+                        "Inklusiv": "0",
+                        "Preis": "0",
+                        "OptCode": "2Z?",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "6060",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "107086",
+                        "BezDe": "Aussenspiegel in Wagenfarbe",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": "6FA",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "6060",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "115721",
+                        "BezDe": "Aussenspiegel in Farbe Roof contrast line",
+                        "Inklusiv": "0",
+                        "Preis": "50",
+                        "OptCode": "6FI",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "6060",
+                        "EquipmentIndexMatch": "47"
+                    },
+                    {
+                        "OptKey": "120303",
+                        "BezDe": "Dachkuppel Kontrastfarbe",
+                        "Inklusiv": "0",
+                        "Preis": "560",
+                        "OptCode": "6H4",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "6060",
+                        "EquipmentIndexMatch": "39"
+                    },
+                    {
+                        "OptKey": "106533",
+                        "BezDe": "S-Line Dachkantenspoiler",
+                        "Inklusiv": "0",
+                        "Preis": "400",
+                        "OptCode": "5J3",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "6060",
+                        "EquipmentIndexMatch": "48"
+                    },
+                    {
+                        "OptKey": "116397",
+                        "BezDe": "Dachflügel Competition",
+                        "Inklusiv": "0",
+                        "Preis": "570",
+                        "OptCode": "YNH",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "6060",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "119792",
+                        "BezDe": "Dachflügel Competition/ Kontrastfarbe",
+                        "Inklusiv": "0",
+                        "Preis": "640",
+                        "OptCode": "YNG",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "6060",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "115717",
+                        "BezDe": "Vorbereitung für Anhängevorrichtung",
+                        "Inklusiv": "0",
+                        "Preis": "160",
+                        "OptCode": "1D7",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "6060",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "107083",
+                        "BezDe": "Metallic-/ Perleffekt-Lackierung",
+                        "Inklusiv": "0",
+                        "Preis": "670",
+                        "OptCode": {},
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "6070",
+                        "EquipmentIndexMatch": "43"
+                    },
+                    {
+                        "OptKey": "115719",
+                        "BezDe": "Sonderlackierung kumulusblau",
+                        "Inklusiv": "0",
+                        "Preis": "300",
+                        "OptCode": "U4",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "6070",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "116915",
+                        "BezDe": "Sonderlackierung daytonagrau",
+                        "Inklusiv": "0",
+                        "Preis": "1710",
+                        "OptCode": {},
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "6070",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "114495",
+                        "BezDe": "Aussenoptik schwarz",
+                        "Inklusiv": "0",
+                        "Preis": "490",
+                        "OptCode": "4ZM",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "6070",
+                        "EquipmentIndexMatch": "5"
+                    },
+                    {
+                        "OptKey": "108883",
+                        "BezDe": "Tirefit",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": "1G8",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": {},
+                        "Gruppe2": "7020",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "109887",
+                        "BezDe": "Leichtmetallräder 16u0027 10 Speichen-Design",
+                        "Inklusiv": "0",
+                        "Preis": "1530",
+                        "OptCode": "CT3",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": "9",
+                        "Gruppe2": "7020",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "115960",
+                        "BezDe": "Leichtmetallräder 17u0027 5-Doppelspeichen",
+                        "Inklusiv": "0",
+                        "Preis": "2640",
+                        "OptCode": "C5I",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": "9",
+                        "Gruppe2": "7020",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "109909",
+                        "BezDe": "Leichtmetallräder 17u0027 5-Arm Design",
+                        "Inklusiv": "0",
+                        "Preis": "2220",
+                        "OptCode": "CP2",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": "9",
+                        "Gruppe2": "7020",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "113299",
+                        "BezDe": "Leichtmetallräder 17u0027 7-Speichen Design",
+                        "Inklusiv": "0",
+                        "Preis": "2220",
+                        "OptCode": "C4F",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": "9",
+                        "Gruppe2": "7020",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "114461",
+                        "BezDe": "Leichtmetallräder 17u0027 10-Speichen",
+                        "Inklusiv": "0",
+                        "Preis": "2730",
+                        "OptCode": "CP4",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": "9",
+                        "Gruppe2": "7020",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "115704",
+                        "BezDe": "Leichtmetallräder 17u0027 5-Speichen V Design",
+                        "Inklusiv": "0",
+                        "Preis": "2430",
+                        "OptCode": "CP3",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": "9",
+                        "Gruppe2": "7020",
+                        "EquipmentIndexMatch": "23"
+                    },
+                    {
+                        "OptKey": "121010",
+                        "BezDe": "Leichtmetallräder 18u0027 5-Speichen V Design",
+                        "Inklusiv": "0",
+                        "Preis": "3750",
+                        "OptCode": "CF9",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": "9",
+                        "Gruppe2": "7020",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "116917",
+                        "BezDe": "Leichtmetallräder 18u0027 5-Arm Rotor Design Titan",
+                        "Inklusiv": "0",
+                        "Preis": "3400",
+                        "OptCode": "C2K",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": "9",
+                        "Gruppe2": "7020",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "122547",
+                        "BezDe": "Leichtmetallräder 18u0027 5-Arm Rotor Design schwarz",
+                        "Inklusiv": "0",
+                        "Preis": "3670",
+                        "OptCode": "CC5",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": "9",
+                        "Gruppe2": "7020",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "116916",
+                        "BezDe": "Leichtmetallräder 18u0027 7-Doppelspeichen AEX",
+                        "Inklusiv": "0",
+                        "Preis": "3570",
+                        "OptCode": "C6I",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": "9",
+                        "Gruppe2": "7020",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "107122",
+                        "BezDe": "Servolenkung",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": {},
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": "19",
+                        "Gruppe2": "7070",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "103751",
+                        "BezDe": "Sportfahrwerk",
+                        "Inklusiv": "0",
+                        "Preis": "280",
+                        "OptCode": "UC2",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": "27",
+                        "Gruppe2": "7080",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "106532",
+                        "BezDe": "S-Line Sportfahrwerk",
+                        "Inklusiv": "0",
+                        "Preis": "790",
+                        "OptCode": "UC3",
+                        "PackCode": "0",
+                        "Gruppe": "2",
+                        "SuchCode": "27",
+                        "Gruppe2": "7080",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "103777",
+                        "BezDe": "Airbag Fahrer und Beifahrerseite",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": {},
+                        "PackCode": "0",
+                        "Gruppe": "3",
+                        "SuchCode": "8",
+                        "Gruppe2": "3030",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "103778",
+                        "BezDe": "Seitenairbag Fahrer und Beifahrerseite",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": {},
+                        "PackCode": "0",
+                        "Gruppe": "3",
+                        "SuchCode": "13",
+                        "Gruppe2": "3030",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "105766",
+                        "BezDe": "Seitliches Kopfairbagsystem SIDEGUARD",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": {},
+                        "PackCode": "0",
+                        "Gruppe": "3",
+                        "SuchCode": "8",
+                        "Gruppe2": "3030",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "113328",
+                        "BezDe": "Vorbereitung für Diebstahltracking-Anlage",
+                        "Inklusiv": "0",
+                        "Preis": "140",
+                        "OptCode": "7G9",
+                        "PackCode": "0",
+                        "Gruppe": "3",
+                        "SuchCode": {},
+                        "Gruppe2": "3040",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "103765",
+                        "BezDe": "Diebstahlwarnanlage mit Innenenraum-Überwachung",
+                        "Inklusiv": "0",
+                        "Preis": "420",
+                        "OptCode": "7AL",
+                        "PackCode": "0",
+                        "Gruppe": "3",
+                        "SuchCode": "14",
+                        "Gruppe2": "3040",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "103780",
+                        "BezDe": "Elektronische Wegfahrsperre",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": {},
+                        "PackCode": "0",
+                        "Gruppe": "3",
+                        "SuchCode": "21",
+                        "Gruppe2": "3040",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "109481",
+                        "BezDe": "Isofix Kindersitzverankerung für Rückbank",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": "3B3",
+                        "PackCode": "0",
+                        "Gruppe": "3",
+                        "SuchCode": "57",
+                        "Gruppe2": "3060",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "115586",
+                        "BezDe": "Deaktivierung Beifahrerairbag",
+                        "Inklusiv": "0",
+                        "Preis": "60",
+                        "OptCode": "4UF",
+                        "PackCode": "0",
+                        "Gruppe": "3",
+                        "SuchCode": {},
+                        "Gruppe2": "3060",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "112910",
+                        "BezDe": "Licht- und Regensensor/ Fernlichtassistent",
+                        "Inklusiv": "0",
+                        "Preis": "190",
+                        "OptCode": "8N7",
+                        "PackCode": "0",
+                        "Gruppe": "3",
+                        "SuchCode": {},
+                        "Gruppe2": "3065",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "109212",
+                        "BezDe": "Park-System hinten",
+                        "Inklusiv": "0",
+                        "Preis": "460",
+                        "OptCode": "7X1",
+                        "PackCode": "0",
+                        "Gruppe": "3",
+                        "SuchCode": "29",
+                        "Gruppe2": "3065",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "108653",
+                        "BezDe": "Park-System vorne + hinten",
+                        "Inklusiv": "0",
+                        "Preis": "880",
+                        "OptCode": "7X4",
+                        "PackCode": "0",
+                        "Gruppe": "3",
+                        "SuchCode": "29,43",
+                        "Gruppe2": "3065",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "110446",
+                        "BezDe": "Reifendruck-Kontrollanzeige",
+                        "Inklusiv": "0",
+                        "Preis": "80",
+                        "OptCode": "7K6",
+                        "PackCode": "0",
+                        "Gruppe": "3",
+                        "SuchCode": {},
+                        "Gruppe2": "3065",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "114496",
+                        "BezDe": "Xenon-Plus Scheinwerfer inkl. LED Rückleuchten",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": "PX4",
+                        "PackCode": "0",
+                        "Gruppe": "3",
+                        "SuchCode": "22",
+                        "Gruppe2": "6050",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "115722",
+                        "BezDe": "LED Rückleuchten",
+                        "Inklusiv": "0",
+                        "Preis": "350",
+                        "OptCode": "8SK",
+                        "PackCode": "0",
+                        "Gruppe": "3",
+                        "SuchCode": {},
+                        "Gruppe2": "6050",
+                        "EquipmentIndexMatch": "18"
+                    },
+                    {
+                        "OptKey": "106509",
+                        "BezDe": "Radschrauben mit Diebstahlsicherung",
+                        "Inklusiv": "0",
+                        "Preis": "40",
+                        "OptCode": "1PD",
+                        "PackCode": "0",
+                        "Gruppe": "3",
+                        "SuchCode": {},
+                        "Gruppe2": "7020",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "103785",
+                        "BezDe": "ESP/ ASR/ EDS/ ABS mit EBV",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": "1AT",
+                        "PackCode": "0",
+                        "Gruppe": "3",
+                        "SuchCode": "6,12,24",
+                        "Gruppe2": "8040",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "107903",
+                        "BezDe": "Audi hill hold assist (Berganfahrassistent)",
+                        "Inklusiv": "0",
+                        "Preis": "90",
+                        "OptCode": "UG4",
+                        "PackCode": "0",
+                        "Gruppe": "3",
+                        "SuchCode": {},
+                        "Gruppe2": "8040",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "112111",
+                        "BezDe": "Klimaanlage manuell",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": "9AB",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": "2",
+                        "Gruppe2": "3010",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "108633",
+                        "BezDe": "Klimaautomat",
+                        "Inklusiv": "0",
+                        "Preis": "490",
+                        "OptCode": "9AK",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": "2,31",
+                        "Gruppe2": "3010",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "113479",
+                        "BezDe": "Dekoreinlagen",
+                        "Inklusiv": "0",
+                        "Preis": "700",
+                        "OptCode": "YI?",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": {},
+                        "Gruppe2": "3050",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "116913",
+                        "BezDe": "Ausströmermanchetten in Alu-Optik AEX",
+                        "Inklusiv": "0",
+                        "Preis": "280",
+                        "OptCode": "5MD",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": {},
+                        "Gruppe2": "3050",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "115707",
+                        "BezDe": "Ausströmermanchetten schwarz hochglanz",
+                        "Inklusiv": "0",
+                        "Preis": "140",
+                        "OptCode": "5MB",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": {},
+                        "Gruppe2": "3050",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "115708",
+                        "BezDe": "Ausströmermanchetten grau hochglanz",
+                        "Inklusiv": "0",
+                        "Preis": "280",
+                        "OptCode": "5MC",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": {},
+                        "Gruppe2": "3050",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "115709",
+                        "BezDe": "Ausströmermanchetten weiss hochglanz",
+                        "Inklusiv": "0",
+                        "Preis": "280",
+                        "OptCode": "5MJ",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": {},
+                        "Gruppe2": "3050",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "115711",
+                        "BezDe": "Ausströmermanchetten wasabigrün hochglanz",
+                        "Inklusiv": "0",
+                        "Preis": "280",
+                        "OptCode": "5MN",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": {},
+                        "Gruppe2": "3050",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "115712",
+                        "BezDe": "Ausströmermanchetten samtbeige hochglanz",
+                        "Inklusiv": "0",
+                        "Preis": "280",
+                        "OptCode": "5MQ",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": {},
+                        "Gruppe2": "3050",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "107071",
+                        "BezDe": "Multifunktions-Ledersportlenkrad 3-Speichen",
+                        "Inklusiv": "0",
+                        "Preis": "410",
+                        "OptCode": "1XW",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": {},
+                        "Gruppe2": "3050",
+                        "EquipmentIndexMatch": "49"
+                    },
+                    {
+                        "OptKey": "106524",
+                        "BezDe": "Nichtraucher- Ausführung",
+                        "Inklusiv": "0",
+                        "Preis": "0",
+                        "OptCode": "9JA",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": {},
+                        "Gruppe2": "3050",
+                        "EquipmentIndexMatch": "46"
+                    },
+                    {
+                        "OptKey": "106522",
+                        "BezDe": "Dachhimmel schwarz/ Stoff",
+                        "Inklusiv": "0",
+                        "Preis": "210",
+                        "OptCode": "6NQ",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": {},
+                        "Gruppe2": "3050",
+                        "EquipmentIndexMatch": "38"
+                    },
+                    {
+                        "OptKey": "111303",
+                        "BezDe": "Leder Milano mit Sitzheizung vorne",
+                        "Inklusiv": "0",
+                        "Preis": "2060",
+                        "OptCode": "N5W+4A3",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": "3,20",
+                        "Gruppe2": "3060",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "103788",
+                        "BezDe": "Sportsitze vorne",
+                        "Inklusiv": "0",
+                        "Preis": "480",
+                        "OptCode": "PS1",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": "28",
+                        "Gruppe2": "3060",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "103711",
+                        "BezDe": "Sitzheizung für Vordersitze",
+                        "Inklusiv": "0",
+                        "Preis": "390",
+                        "OptCode": "4A3",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": "20",
+                        "Gruppe2": "3060",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "119797",
+                        "BezDe": "Rücksitzanlage dreisitzig",
+                        "Inklusiv": "0",
+                        "Preis": "0",
+                        "OptCode": "3NJ",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": {},
+                        "Gruppe2": "3060",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "108731",
+                        "BezDe": "Rücksitzlehne umklappbar",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": "3NZ",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": {},
+                        "Gruppe2": "3060",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "103783",
+                        "BezDe": "Lenksäule mit Höhen- und Längseinstellung",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": "2C5",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": {},
+                        "Gruppe2": "3065",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "107081",
+                        "BezDe": "Innenspiegel automatisch abblendbar/ Licht- und Regensensor",
+                        "Inklusiv": "0",
+                        "Preis": "340",
+                        "OptCode": "4L6+8N6",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": {},
+                        "Gruppe2": "3065",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "103731",
+                        "BezDe": "Mittelarmlehne vorne",
+                        "Inklusiv": "0",
+                        "Preis": "170",
+                        "OptCode": "6E3",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": {},
+                        "Gruppe2": "3065",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "115714",
+                        "BezDe": "Ski- und Snowboardsack",
+                        "Inklusiv": "0",
+                        "Preis": "110",
+                        "OptCode": "3X5",
+                        "PackCode": "0",
+                        "Gruppe": "5",
+                        "SuchCode": {},
+                        "Gruppe2": "3065",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "103732",
+                        "BezDe": "Fahrer-Informationssystem FIS",
+                        "Inklusiv": "0",
+                        "Preis": "250",
+                        "OptCode": "9Q7",
+                        "PackCode": "0",
+                        "Gruppe": "7",
+                        "SuchCode": {},
+                        "Gruppe2": "3070",
+                        "EquipmentIndexMatch": "40"
+                    },
+                    {
+                        "OptKey": "115723",
+                        "BezDe": "Radio Media Center",
+                        "Inklusiv": "0",
+                        "Preis": "520",
+                        "OptCode": "RCM",
+                        "PackCode": "0",
+                        "Gruppe": "7",
+                        "SuchCode": {},
+                        "Gruppe2": "4014",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "107921",
+                        "BezDe": "Radio Concert",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": {},
+                        "PackCode": "0",
+                        "Gruppe": "7",
+                        "SuchCode": {},
+                        "Gruppe2": "4014",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "110955",
+                        "BezDe": "Audi Sound System",
+                        "Inklusiv": "0",
+                        "Preis": "350",
+                        "OptCode": "9VD",
+                        "PackCode": "0",
+                        "Gruppe": "7",
+                        "SuchCode": {},
+                        "Gruppe2": "4014",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "109493",
+                        "BezDe": "Bose Sound System",
+                        "Inklusiv": "0",
+                        "Preis": "900",
+                        "OptCode": "9VK",
+                        "PackCode": "0",
+                        "Gruppe": "7",
+                        "SuchCode": {},
+                        "Gruppe2": "4014",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "107883",
+                        "BezDe": "Radioempfang digital DAB",
+                        "Inklusiv": "0",
+                        "Preis": "420",
+                        "OptCode": "QV3",
+                        "PackCode": "0",
+                        "Gruppe": "7",
+                        "SuchCode": "45",
+                        "Gruppe2": "4014",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "105767",
+                        "BezDe": "CD-Wechsler im Handschuhfach",
+                        "Inklusiv": "0",
+                        "Preis": "570",
+                        "OptCode": "7A2",
+                        "PackCode": "0",
+                        "Gruppe": "7",
+                        "SuchCode": "7",
+                        "Gruppe2": "4020",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "110656",
+                        "BezDe": "Audi music interface",
+                        "Inklusiv": "0",
+                        "Preis": "410",
+                        "OptCode": "UE2",
+                        "PackCode": "0",
+                        "Gruppe": "7",
+                        "SuchCode": {},
+                        "Gruppe2": "4026",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "114497",
+                        "BezDe": "Bluetooth Schnittstelle",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": "9ZX",
+                        "PackCode": "0",
+                        "Gruppe": "7",
+                        "SuchCode": "42",
+                        "Gruppe2": "4026",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "115724",
+                        "BezDe": "Navigationsmodul",
+                        "Inklusiv": "0",
+                        "Preis": "1610",
+                        "OptCode": "PNU",
+                        "PackCode": "0",
+                        "Gruppe": "7",
+                        "SuchCode": "1",
+                        "Gruppe2": "4044",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "110081",
+                        "BezDe": "Navigationssystem plus mit MMI Bedienlogik",
+                        "Inklusiv": "0",
+                        "Preis": "3610",
+                        "OptCode": "PNQ",
+                        "PackCode": "0",
+                        "Gruppe": "7",
+                        "SuchCode": "1",
+                        "Gruppe2": "4044",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "115726",
+                        "BezDe": "Handy Vorbereitung inkl. Mittelarmlehne",
+                        "Inklusiv": "0",
+                        "Preis": "910",
+                        "OptCode": "9ZF",
+                        "PackCode": "0",
+                        "Gruppe": "7",
+                        "SuchCode": {},
+                        "Gruppe2": "4070",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "109925",
+                        "BezDe": "Autotelefon Bluetooth",
+                        "Inklusiv": "0",
+                        "Preis": "700",
+                        "OptCode": "9ZW",
+                        "PackCode": "0",
+                        "Gruppe": "7",
+                        "SuchCode": "42",
+                        "Gruppe2": "4074",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "120988",
+                        "BezDe": "Audi Phone Box",
+                        "Inklusiv": "0",
+                        "Preis": "890",
+                        "OptCode": "9ZE",
+                        "PackCode": "0",
+                        "Gruppe": "7",
+                        "SuchCode": {},
+                        "Gruppe2": "4074",
+                        "EquipmentIndexMatch": {}
+                    },
+                    {
+                        "OptKey": "119913",
+                        "BezDe": "Keine Gewähr auf die Angaben der Serienausstattungen",
+                        "Inklusiv": "1",
+                        "Preis": "0",
+                        "OptCode": {},
+                        "PackCode": "0",
+                        "Gruppe": "7",
+                        "SuchCode": {},
+                        "Gruppe2": "9910",
+                        "EquipmentIndexMatch": {}
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -18,13 +18,14 @@
     <link rel="stylesheet" href="/assets/dist/css/select2.css">
     <link rel="stylesheet" href="/admin-assets/tpicker/lib/tpicker.css">
     <link rel="stylesheet" href="/admin-assets/flatpickr/dist/themes/dark.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/admin-assets/css/style.css">
     <script src="/assets/js/jquery-3.6.0.min.js"></script>
     <script src="/assets/dist/js/select2.min.js"></script>
     <script src="/admin-assets/tpicker/lib/tpicker.js"></script>
     <script src="/admin-assets/tpicker/lib/tpicker.js"></script>
     <script src="/admin-assets/js/sweetaler.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.soap@1.7.3/jquery.soap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 </head>
 
 <body class="dark-mode with-custom-css-scrollbars with-custom-webkit-scrollbars">

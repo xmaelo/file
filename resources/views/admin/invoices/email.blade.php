@@ -18,7 +18,10 @@ OBJET : Relance d’impayé - facture n° [numéro de la facture]</title>
 		<br/> 
 
 		Si toutefois votre règlement avait été adressé avant réception de ce mail, nous vous prions de ne pas en tenir compte.
-
+        <br/>
+        En vous remerciant de faire le nécessaire, nous restons à votre disposition pour tout renseignement complémentaire. 
+        <br/>
+        Cordialement
 	</p>
     
     

@@ -10,7 +10,7 @@
 <body>  
 
  <img width="725" src="{{$image}}" alt="">
- <img width="725" src="{{$image2}}" alt="">
+
   
 </body>
 

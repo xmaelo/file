@@ -78,7 +78,7 @@ Route::get('storage/{filename}', function ($filename)
     return $response;
 });
 
-Route::get('soap', function ()
+Route::get('soap/{vinNumber}', function ($vinNumber)
 {
     // Nom d'utilisateur : fastlife
     // Mot de passe : hgvul40u
@@ -91,21 +91,36 @@ Route::get('soap', function ()
      //         "Einstellungen"=>""
 
     try {
+        $Benutzername = "fastlife";
+        $Passwort = "hgvul40u";
+
+        $DATKundenNr = "0000000";
+        $DATBenutzer = "vintest";
+        $DATPasswort = "j5Ps73bZ";
+
         function XMLtoJSON($xml) {
+
           $xml = str_replace(array("\n", "\r", "\t"), '', $xml); 
           $xml = trim(str_replace('"', "'", $xml));
           $simpleXml = simplexml_load_string($xml);
 
-          return stripslashes(json_encode($simpleXml));  
+          return stripslashes(json_encode($simpleXml, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE));  
         }
 
-        $res = Soap::to('https://ws.auto-i-dat.ch/WebServiceFahrzeuge.asmx?wsdl')->call(
+        $build_signature = $DATKundenNr.":".$DATBenutzer.":".$DATPasswort;
+        $signature = hash("sha256", $build_signature, false, []);
+        //dd($signature);
+
+        //" WAUDEXTESTSTUB004 "
+        $res = Soap::to('https://ws.auto-i-dat.ch/WebServiceVIN.asmx?WSDL')->call(
                 "Suchen", [
-                "Benutzername"=>"fastlife",
-                "Passwort"=>"hgvul40u",
-                "Sprache"=>"En",
-                "Datenname"=>"Marken",
-                "Suchwerte"=>"FzArt=01;MarkenNr=020",
+                "Benutzername"=>$Benutzername,
+                "Passwort"=>$Passwort,
+                "Sprache"=>"De",
+                "DATKundenNr"=>$DATKundenNr,
+                "DATBenutzer"=>$DATBenutzer,
+                "DATSignatur"=>$signature,
+                "VIN"=> $vinNumber,
                 "Einstellungen"=>""
 
             ]
@@ -133,10 +148,10 @@ Route::get('soap', function ()
         
         
 
-        dd(XMLtoJSON($da));
+        echo (XMLtoJSON($da));
     }
     catch (Exception $ex) {
-        dd("soap error: " . $ex->getMessage());
+        echo("soap error: " . $ex->getMessage());
     }
 });
 
