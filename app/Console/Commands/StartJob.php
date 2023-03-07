@@ -42,7 +42,7 @@ class StartJob extends Command
     public function handle()
     {
         $today = Carbon::now()->toDateString();
-        $late_invoices = SellerInvoice::join('users', 'users.id', '=', 'seller_invoices.user_id')->whereDate('seller_invoices.deadline', '<=',   $today)->where('seller_invoices.paid', false) ->where('seller_invoices.email_send_counter', '<', 4)->get(['seller_invoices.*', 'users.email', "users.form_of_address" , "users.first_name"]);
+        $late_invoices = SellerInvoice::join('users', 'users.id', '=', 'seller_invoices.user_id')->whereDate('seller_invoices.deadline', '<=',   $today)->where('seller_invoices.paid', false) ->where('seller_invoices.email_send_counter', '=', 0)->get(['seller_invoices.*', 'users.email', "users.form_of_address" , "users.first_name"]);
 
         if ($late_invoices->count() > 0) {
             foreach ($late_invoices as $late_invoice) {
